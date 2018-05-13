@@ -1,0 +1,29 @@
+{
+  "customers": [
+    {
+     "id": 1,
+     "name": "Steve Rogers",
+     "gender": "Male",
+     "phone": "0816432151564",
+     "age": 95,
+     "address": "Kelapa Gading, Jakarta Utara",
+     "status": "Not eligible"
+   }, {
+     "id": 2,
+     "name": "Thor",
+     "gender": "Male",
+     "phone": "0812154231546",
+     "age": 1500,
+     "address": "Kemang, Jakarta Selatan",
+     "status": "Not eligible"
+   }, {
+      "id": 3,
+      "name": "Tony Stark",
+      "gender": "Male",
+      "phone": "081912312312",
+      "age": 41,
+      "address": "Menteng, Jakarta Selatan",
+      "status": "Eligible"
+    }
+  ]
+}

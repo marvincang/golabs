@@ -1,0 +1,12 @@
+.icon {
+  width: 40px;
+}
+
+.accountText {
+  text-align: right;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+  border-radius: 0;
+}
