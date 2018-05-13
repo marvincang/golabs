@@ -34,6 +34,8 @@ class App extends React.Component {
   }
 
   render() {
+    let count = this.state.customers.length + " customer";
+    count += this.state.customers.length > 1 ? "s found." : " found.";
     return (
 			<div>
 	      <CustomNavbar/>
@@ -47,6 +49,11 @@ class App extends React.Component {
             <Col xs={12} md={12}>
               <CustomerList customers={this.state.customers}/>
             </Col>
+          </Row>
+          <Row>
+            <p className="count">
+              {count}
+            </p>
           </Row>
 	      </Grid>
     	</div>

@@ -1,0 +1,16 @@
+{
+  "creds": [
+    {
+      "email": "admin@gojek.com",
+      "password": "admin01",
+      "mode": "Admin",
+      "name": "Marvin"
+    }, {
+      "email": "member@gojek.com",
+      "password": "member01",
+      "mode": "Member",
+      "name": "Cangcianno"
+    }
+
+  ]
+}

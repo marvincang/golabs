@@ -26,15 +26,12 @@ class Customer extends React.Component {
                 <strong>{cust.name}</strong>
               </h4>
               <div>
-                id: {cust.id}, {cust.age} years old, {cust.phone}
-                <br/>
-                Address: {cust.address}
+                {cust.age} years old, {cust.phone}
                 <br/>
                 {cust.status} for promotion
               </div>
             </Col>
             <Col xs={6} md={4}>
-              <br/>
               <br/>
               <br/>
               <Button className="button-details" bsStyle="primary" bsSize="small" onClick={this.handleClick}>{'Show details'}</Button>

@@ -1,23 +1,48 @@
 {
   "customers": [
     {
-     "id": 1,
+      "id": 1,
+      "name": "Black Widow",
+      "gender": "Female",
+      "phone": "081239124741",
+      "age": 28,
+      "address": "Puri, Jakarta Barat",
+      "status": "Not eligible"
+    }, {
+      "id": 2,
+      "name": "Bruce Banner",
+      "gender": "Male",
+      "phone": "081492831273",
+      "age": 41,
+      "address": "Sunter, Jakarta Utara",
+      "status": "Not eligible"
+    }, {
+      "id": 3,
+      "name": "Clint Barton",
+      "gender": "Male",
+      "phone": "081948739238",
+      "age": 32,
+      "address": "Kemayoran, Jakarta Pusat",
+      "status": "Eligible"
+    },
+    {
+     "id": 4,
      "name": "Steve Rogers",
      "gender": "Male",
      "phone": "0816432151564",
-     "age": 95,
+     "age": 35,
      "address": "Kelapa Gading, Jakarta Utara",
      "status": "Not eligible"
    }, {
-     "id": 2,
+     "id": 5,
      "name": "Thor",
      "gender": "Male",
      "phone": "0812154231546",
-     "age": 1500,
+     "age": 38,
      "address": "Kemang, Jakarta Selatan",
      "status": "Not eligible"
    }, {
-      "id": 3,
+      "id": 6,
       "name": "Tony Stark",
       "gender": "Male",
       "phone": "081912312312",

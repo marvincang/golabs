@@ -11,15 +11,16 @@ const InfoDetail = (props) => {
     detail =
       <div>
         <h3>{cust.name}</h3>
-        <p>
+        <p className="text-details">
           ID: {cust.id}<br/>
           Gender: {cust.gender}<br/>
           Phone Number: {cust.phone}<br/>
           Age: {cust.age}<br/>
-          Address: {cust.address}<br/>
-          Status: {cust.status}<br/>
+          Home Address: {cust.address}<br/>
+          Upgrade Status: {cust.status}<br/><br/>
           {/* {cust.id}<br/>
           {cust.id}<br/> */}
+          More details here ...
         </p>
       </div>
   }

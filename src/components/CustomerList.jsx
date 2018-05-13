@@ -2,7 +2,7 @@ import React from 'react';
 import { ListGroup, Grid, Col, Row, Button } from 'react-bootstrap';
 import Customer from './Customer';
 import InfoDetail from './InfoDetail';
-// import './../styles/CustomerList.css';
+import './../styles/CustomerList.css';
 
 class CustomerList extends React.Component {
   constructor(props) {
@@ -50,10 +50,8 @@ class CustomerList extends React.Component {
             {customer}
           </ListGroup>
         </Col>
-        <Col xs={6} md={1}>
-          <Button style={this.infoStyle} bsSize="sm" className="close" onClick={this.handleClose}>{"<"}</Button>
-        </Col>
-        <Col xs={6} md={3}>
+        <Col xs={6} md={4}>
+          <Button style={this.infoStyle} bsSize="sm" className=".button-close" bsStyle="primary" onClick={this.handleClose}>{"< Back"}</Button><br/>
           <InfoDetail style={this.infoStyle} clicked={this.state.clicked} />
         </Col>
       </Row>

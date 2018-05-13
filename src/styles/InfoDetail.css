@@ -1,5 +1,10 @@
 .info-detail {
   background-color: #eee;
-  padding: 10px;
+  padding: 5px;
+  padding-left: 15px;
   border-radius: 5px;
+}
+
+.text-details {
+  line-height: 1.5;
 }
