@@ -11,10 +11,6 @@ class CustomerList extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
-    this.customer = this.props.customers.map((cust) => {
-      return <Customer key={cust.id} name={cust.name} id={cust.id} gender={cust.gender} age={cust.age} address={cust.address} phone={cust.phone} status={cust.status} onDetailClicked={this.handleClick}/>
-    })
-
     this.state = {
       clicked: false
     }
@@ -29,7 +25,7 @@ class CustomerList extends React.Component {
       display: "block"
     }
     this.setState({
-      clicked: term.cust,
+      clicked: term.props,
     });
   }
 
@@ -43,11 +39,15 @@ class CustomerList extends React.Component {
   }
 
   render() {
+    const customer = this.props.customers.map((cust) => {
+      return <Customer key={cust.id} name={cust.name} id={cust.id} gender={cust.gender} age={cust.age} address={cust.address} phone={cust.phone} status={cust.status} onDetailClicked={this.handleClick}/>
+    })
+
     return (
       <Row>
         <Col xs={6} md={8}>
           <ListGroup>
-            {this.customer}
+            {customer}
           </ListGroup>
         </Col>
         <Col xs={6} md={1}>

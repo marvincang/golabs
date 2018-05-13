@@ -6,29 +6,31 @@ class Customer extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.cust = props;
   }
 
   handleClick() {
     console.log("clicked");
+    console.log(this);
     this.props.onDetailClicked(this);
   }
 
   render() {
+    const cust = this.props;
+
     return (
       <ListGroupItem>
         <Grid>
           <Row>
             <Col xs={6} md={4}>
               <h4>
-                <strong>{this.cust.name}</strong>
+                <strong>{cust.name}</strong>
               </h4>
               <div>
-                id: {this.cust.id}, {this.cust.age} years old, {this.cust.phone}
+                id: {cust.id}, {cust.age} years old, {cust.phone}
                 <br/>
-                Address: {this.cust.address}
+                Address: {cust.address}
                 <br/>
-                {this.cust.status} for promotion
+                {cust.status} for promotion
               </div>
             </Col>
             <Col xs={6} md={4}>

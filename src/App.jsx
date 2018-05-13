@@ -12,6 +12,7 @@ class App extends React.Component {
     super();
 		this.handleTermChange = this.handleTermChange.bind(this);
 		this.state = customers;
+    // console.log(this);
     // this.state = {
 		// 	customers: []
 		// };
@@ -25,6 +26,8 @@ class App extends React.Component {
 			names.forEach((name) => {b = name.toLowerCase().startsWith(term) ? true : b;})
 			return b;
 		})
+    // console.log(this);
+    // console.log(filtered);
 		this.setState({
 			customers: filtered
 		});
