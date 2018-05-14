@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, DropdownButton, MenuItem } from 'react-bootstrap';
 import SearchBar from './components/SearchBar';
 import CustomerList from './components/CustomerList';
 import CustomNavbar from './components/CustomNavbar';
@@ -33,6 +33,11 @@ class App extends React.Component {
 		});
   }
 
+  handleSelect(evtKey) {
+    let desc = evtKey % 2 == 0;
+    let key = "";
+  }
+
   render() {
     let count = this.state.customers.length + " customer";
     count += this.state.customers.length > 1 ? "s found." : " found.";
@@ -44,6 +49,14 @@ class App extends React.Component {
 	          <Col xs={12} md={8}>
 	            <SearchBar onTermChange={this.handleTermChange}/>
 	          </Col>
+            <Col xs={6} md={4}>
+              <DropdownButton title="Order by" key={1} id="dropdown-basic-1" onSelect={event => this.handleSelect(event)}>
+                <MenuItem eventKey={3}>First Name (A-Z)</MenuItem>
+                <MenuItem eventKey={4}>First Name (Z-A)</MenuItem>
+                <MenuItem eventKey={5}>Last Name (A-Z)</MenuItem>
+                <MenuItem eventKey={6}>Last Name (Z-A)</MenuItem>
+              </DropdownButton>
+            </Col>
 	        </Row>
           <Row>
             <Col xs={12} md={12}>

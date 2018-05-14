@@ -23,7 +23,7 @@ class Customer extends React.Component {
           <Row>
             <Col xs={6} md={4}>
               <h4>
-                <strong>{cust.name}</strong>
+                <strong>{cust.fullname}</strong>
               </h4>
               <div>
                 {cust.age} years old, {cust.phone}

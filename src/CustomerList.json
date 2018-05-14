@@ -1,33 +1,35 @@
 {
-  "customers": [
-    {
+  "customers": [{
       "id": 1,
-      "name": "Black Widow",
-      "gender": "Female",
-      "phone": "081239124741",
-      "age": 28,
-      "address": "Puri, Jakarta Barat",
-      "status": "Not eligible"
-    }, {
-      "id": 2,
-      "name": "Bruce Banner",
+      "firstname": "Bruce",
+      "lastname": "Banner",
       "gender": "Male",
       "phone": "081492831273",
       "age": 41,
       "address": "Sunter, Jakarta Utara",
       "status": "Not eligible"
     }, {
-      "id": 3,
-      "name": "Clint Barton",
+      "id": 2,
+      "firstname": "Clint",
+      "lastname": "Barton",
       "gender": "Male",
       "phone": "081948739238",
       "age": 32,
       "address": "Kemayoran, Jakarta Pusat",
       "status": "Eligible"
-    },
-    {
+    }, {
+      "id": 3,
+      "firstname": "Natasha",
+      "lastname": "Romanoff",
+      "gender": "Female",
+      "phone": "081239124741",
+      "age": 28,
+      "address": "Puri, Jakarta Barat",
+      "status": "Not eligible"
+    }, {
      "id": 4,
-     "name": "Steve Rogers",
+     "firstname": "Steve",
+     "lastname": "Rogers",
      "gender": "Male",
      "phone": "0816432151564",
      "age": 35,
@@ -35,7 +37,8 @@
      "status": "Not eligible"
    }, {
      "id": 5,
-     "name": "Thor",
+     "firstname": "Thor",
+     "lastname": "",
      "gender": "Male",
      "phone": "0812154231546",
      "age": 38,
@@ -43,7 +46,8 @@
      "status": "Not eligible"
    }, {
       "id": 6,
-      "name": "Tony Stark",
+      "firstname": "Tony",
+      "lastname": "Stark",
       "gender": "Male",
       "phone": "081912312312",
       "age": 41,

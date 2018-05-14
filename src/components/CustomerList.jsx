@@ -40,7 +40,7 @@ class CustomerList extends React.Component {
 
   render() {
     const customer = this.props.customers.map((cust) => {
-      return <Customer key={cust.id} name={cust.name} id={cust.id} gender={cust.gender} age={cust.age} address={cust.address} phone={cust.phone} status={cust.status} onDetailClicked={this.handleClick}/>
+      return <Customer key={cust.id} fullname={cust.firstname + " " + cust.lastname} id={cust.id} gender={cust.gender} age={cust.age} address={cust.address} phone={cust.phone} status={cust.status} onDetailClicked={this.handleClick}/>
     })
 
     return (

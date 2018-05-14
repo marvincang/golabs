@@ -38,7 +38,7 @@ export default class CustomNavbar extends Component {
   handleLogin() {
     let b = false;
     creds.creds.forEach(cred => {
-      if (this.state.email == cred.email && this.state.password == cred.password) {
+      if (this.state.email === cred.email && this.state.password === cred.password) {
         b = true;
         this.user = {
           "name": cred.name,
