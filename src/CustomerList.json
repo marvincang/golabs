@@ -38,7 +38,7 @@
    }, {
      "id": 5,
      "firstname": "Thor",
-     "lastname": "",
+     "lastname": " ",
      "gender": "Male",
      "phone": "0812154231546",
      "age": 38,
