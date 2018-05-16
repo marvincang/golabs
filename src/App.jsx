@@ -23,7 +23,7 @@ class App extends React.Component {
   handleTermChange(term) {
 		const data = customers.customers;
 		const filtered = data.filter((cust) => {
-			let names = cust.name.split(' ');
+			let names = [cust.firstname, cust.lastname]
 			let b = false;
 			names.forEach((name) => {b = name.toLowerCase().startsWith(term) ? true : b;})
 			return b;

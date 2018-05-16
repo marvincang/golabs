@@ -10,7 +10,7 @@ const InfoDetail = (props) => {
   if (cust) {
     detail =
       <div>
-        <h3>{cust.name}</h3>
+        <h3>{cust.firstname + " " + cust.lastname}</h3>
         <p className="text-details">
           ID: {cust.id}<br/>
           Gender: {cust.gender}<br/>
